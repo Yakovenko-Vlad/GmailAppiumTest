@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Demo test suite" verbose="1">
+    <listeners>
+        <listener class-name="utils.logging.AllureScreenshotListener" />
+    </listeners>
+    <test name="Test case 1: New user autorization">
+        <classes>
+            <class name="tests.AuthorizationTest"/>
+            <class name="tests.GmailTest"/>
+        </classes>
+    </test>
+
+    <test name="Test case 3: Demo failed test">
+        <classes>
+            <class name="tests.DemoFailedTest"/>
+        </classes>
+    </test>
+
+</suite>
